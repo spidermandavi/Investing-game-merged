@@ -272,3 +272,11 @@ function launchConfetti(){
 
   setTimeout(()=>document.body.removeChild(confettiContainer),3500);
 }
+function confirmEndGame() {
+  const popupHtml = `
+    <b>Are you sure you want to end the game?</b><br><br>
+    <button onclick="endGame(true)">Yes, End Game</button>
+    <button onclick="document.getElementById('popup').classList.add('hidden')">Cancel</button>
+  `;
+  popup(popupHtml);
+}

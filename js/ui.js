@@ -157,7 +157,7 @@ function render(){
   const buttonContainer = document.querySelector(".buttons");
   buttonContainer.innerHTML = `<div id="buySellToggle"></div>
     <button onclick="endTurn()">End Turn</button>
-    <button class="danger" onclick="endGame(true)">End Game</button>
+    <button class="danger" onclick="confirmEndGame()">End Game</button>
   `;
   setTradeMode(tradeMode);
 }
